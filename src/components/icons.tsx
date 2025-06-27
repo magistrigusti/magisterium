@@ -10,18 +10,78 @@ export const Logo: React.FC<IconSvgProps> = ({
   <svg
     fill="none"
     height={size || height}
-    viewBox="0 0 32 32"
     width={size || height}
+    viewBox="0 0 36 36"
     {...props}
   >
-    <path
-      clipRule="evenodd"
-      d="M17.6482 10.1305L15.8785 7.02583L7.02979 22.5499H10.5278L17.6482 10.1305ZM19.8798 14.0457L18.11 17.1983L19.394 19.4511H16.8453L15.1056 22.5499H24.7272L19.8798 14.0457Z"
+    {/* Башня (основа) */}
+    <rect
+      x="14"
+      y="13"
+      width="8"
+      height="14"
+      rx="2"
       fill="currentColor"
-      fillRule="evenodd"
+    />
+    {/* Купол (верхняя полусфера) */}
+    <ellipse
+      cx="18"
+      cy="13"
+      rx="5"
+      ry="3"
+      fill="currentColor"
+      fillOpacity="0.7"
+    />
+    {/* Шпиль (магический) */}
+    <rect
+      x="17"
+      y="7"
+      width="2"
+      height="6"
+      rx="1"
+      fill="currentColor"
+      fillOpacity="0.9"
+    />
+    {/* Окна-руны */}
+    <rect
+      x="17"
+      y="18"
+      width="2"
+      height="3"
+      rx="1"
+      fill="#fff"
+      fillOpacity="0.8"
+    />
+    <circle
+      cx="18"
+      cy="23"
+      r="1"
+      fill="#fff"
+      fillOpacity="0.7"
+    />
+    {/* Основание */}
+    <rect
+      x="12"
+      y="27"
+      width="12"
+      height="3"
+      rx="1.5"
+      fill="currentColor"
+      fillOpacity="0.6"
+    />
+    {/* Мягкое сияние ауры */}
+    <ellipse
+      cx="18"
+      cy="10"
+      rx="7"
+      ry="2"
+      fill="currentColor"
+      fillOpacity="0.15"
     />
   </svg>
 );
+
+
 
 export const DiscordIcon: React.FC<IconSvgProps> = ({
   size = 24,
