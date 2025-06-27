@@ -8,7 +8,7 @@ export default function IndexPage() {
     <DefaultLayout>
       <section className="container px-md:px-5 mx-auto ">
         {/* Header */}
-        <div className="mb-8">
+        <div className="mb-2">
           <Header />
         </div>
 
