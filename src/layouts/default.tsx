@@ -21,7 +21,7 @@ export default function DefaultLayout({
           title="Allodium homepage"
         >
           <span className="text-default-600">Powered by</span>
-          <p className="text-primary">ALLODIUM™ Fondation</p>
+          <p className="text-orange-400">ALLODIUM™ Fondation</p>
         </Link>
       </footer>
     </div>

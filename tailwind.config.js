@@ -1,4 +1,5 @@
-import {heroui} from "@heroui/theme"
+import {heroui, colors} from "@heroui/theme";
+import { COLORS } from './src/constants.ts';
 
  /** @type {import('tailwindcss').Config} */
 export default {
@@ -11,8 +12,23 @@ export default {
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'main-darkest': COLORS.mainDarkest,
+        'main-darker': COLORS.mainDarker,
+        'main-dark': COLORS.mainDark,
+      }
+    },
   },
   darkMode: "class",
-  plugins: [heroui()],
+  plugins: [heroui({
+    themes: {
+      dark: {
+        colors: {
+          background: COLORS.mainDarkest,
+          primary: COLORS.primary,
+        }
+      }
+    }
+  })],
 }
