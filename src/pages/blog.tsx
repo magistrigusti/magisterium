@@ -1,4 +1,4 @@
-import { title } from "@/components/primitives";
+import { title } from "@/components/hero-components/primitives";
 import DefaultLayout from "@/layouts/default";
 
 export default function DocsPage() {
