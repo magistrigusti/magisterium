@@ -38,7 +38,7 @@ const options = {
 };
 
 function MarketChart({ series }: Props) {
-  // Если приходят timestamp в секундах, переводим в миллисекунды:
+  
   const data = series.map(([x, y]) => [x * 1000, y]);
   return (
     <div>

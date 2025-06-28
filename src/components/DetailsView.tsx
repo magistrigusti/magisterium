@@ -1,5 +1,6 @@
 import { Button, ButtonGroup } from "@heroui/button";
 import MarketChart from "./MarketChart";
+import PriceChange24h from "./PriceChange24h";
 
 type Props = {};
 
@@ -21,17 +22,16 @@ function DetailsView({ }: Props) {
         </ButtonGroup>
 
         <div className="my-auto text-white font-bold">Bitcoin</div>
-        {/* <div className="my-auto text-white font-bold">Ethereum</div>
-          <div className="my-auto text-white font-bold">Toncoin</div> */}
+        
       </div>
       {/* Chart */}
       <div className="mx-auto w-full min-h-96">
         <MarketChart series={[
-          [1704887002, 12000],
-          [1704888702, 11200],
-          [1704889702, 11500],
-          [1704890702, 12500],
-          [1704891702, 11000],
+          [1704887002, 120000],
+          [1704888702, 112000],
+          [1704889702, 115000],
+          [1704890702, 125000],
+          [1704891702, 110000],
         ]} />
 
       </div>
@@ -48,7 +48,7 @@ function DetailsView({ }: Props) {
               102000$
             </div>
 
-            {/* <PriceChange24h /> */}
+            <PriceChange24h changePrice={40} /> 
           </div>
         </div>
 
